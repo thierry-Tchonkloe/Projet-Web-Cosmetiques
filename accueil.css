@@ -1,77 +1,92 @@
-/*GENERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans&family=Kaushan+Script&family=Roboto:wght@100;400&family=Ubuntu&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
-.sous-menu{
+.sous_menu{
     list-style-type: none;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 50px !important;
 }
-.sous-menu>a{
+.sous_menu>a{
     display: inline-block;
     font-size: 20px;
+    color: black;
 }
-.container-menu{
+.container_menu{
     position: fixed;
-width: 100%;
-height: 50px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-box-shadow: 9px 0px 9px rgba(0,0,0,0.5);
-z-index: 100;
-
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important;
+    box-shadow: 9px 0px 9px rgba(0,0,0,0.5);
+    z-index: 100;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 .logo{
     width: 20%;
 }
-.menu{
+.menu_{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
 }
-.accueil-link{
+.accueil_link{
     color: white;
     font-weight: bold;
 }
-.current-menu{
+.active{
     background-color: teal;
 }
-.img-back-section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin-top: 0px;
+.sous_menu:hover{
+    background-color:chocolate;
 }
-.img-container{
+
+.img_back_section{
     position: relative;
     width: 100%;
     height: 100vh;
-    /* border: 1px solid black; */
+    margin-top:0px;
+    padding-top: 50px;
+}
+.img_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-image: url("images/font2copie.jpg");
     background-size: cover;
+    background-position: center;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.img-container>h1{
+
+.img_container>h2{
+    padding-left: 4%;
+    padding-right: 4%;
     font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
 }
-.img-container>h3{
-font-size: 30px;
-margin: 25px 0px;
+.img_container>h4{
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 30px;
+    margin: 25px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
-.shop-button{
+.shop_button{
     padding: 5px;
     font-size: 25px;
     background-color: teal;
@@ -83,34 +98,35 @@ margin: 25px 0px;
     text-transform:uppercase;
     text-align: center;
 }
-.shop-button:hover{
+.shop_button:hover{
     color: teal;
     background: none;
     border-radius: 25px;
     border: 2px solid teal;
+    transition: 0.3s;
 }
-.product-section{
+.product_section{
+    position: relative;
     margin: 50px 0px;
-    /* border: 1px solid black; */
 }
-.section-title span{
+.section_title span{
     height: 5px;
     background-color: teal;
-    width: 200px;
+    width: 10%;
     display: inline-block;
 }
-.section-title{
+.section_title{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.section-title>h2{
+.section_title>h2{
     margin: 0px 5px;
 }
-.produit-item{
+.produit_item{
     width: 260px;
     height: 350px;
-    /* border: 1px solid red; */
+    border: 1px solid teal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,32 +135,31 @@ margin: 25px 0px;
     margin: 25px;
     padding: 5px;
 }
-.produit-image{
+.produit_image{
     width: 90%;
     position: relative;
     height: 60%;
     object-fit: cover;
     padding: 5px;
 }
-.produit-item figcaption{
+.produit_item figcaption{
     position: relative;
     width: 90%;
     height: 20%;
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 } 
-.produit-title{
+.produit_title{
     font-size: 20px;
     font-weight: bold;
 }
-.produit-price{
+.produit_price{
     font-size: 20px;
     text-transform: uppercase;
 }
-.shop-button-container{
+.shop_button_container{
     position: relative;
     width: 90%;
     margin: 0px auto;
@@ -152,16 +167,16 @@ margin: 25px 0px;
     align-items: center;
     justify-content: center;
 }
-.produit-item .shop-button{
+.produit_item .shop_button{
     font-size: 20px;
 }
-.produit-item .shop-button:hover{
+.produit_item .shop_button:hover{
     color: yellow;
     background: teal;
     opacity: 0.8;
     border-radius: 0px;
 }
-.all-product{
+.all_product{
     position: relative;
     width: 85%;
     height: auto;
