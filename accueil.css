@@ -7,25 +7,29 @@ a{
     text-decoration: none !important;
 }
 .sous_menu{
+    position: relative;
     list-style-type: none;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    min-height: 50px !important;
+    margin-top: 6px !important;
+    min-height: 66px !important;
 }
 .sous_menu>a{
     display: inline-block;
     font-size: 20px;
     color: black;
+    font-weight: bold;
 }
 .container_menu{
-    position: fixed;
+    position: sticky !important;
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
+    min-height: 70px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
     align-items: center !important;
     box-shadow: 9px 0px 9px rgba(0,0,0,0.5);
     z-index: 100;
@@ -33,12 +37,19 @@ a{
     background-color: white;
 }
 .logo{
-    width: 20%;
+    width: 20% !important;
+}
+.logo>a>img{
+    width: 70px;
+    height: 70px;
 }
 .menu_{
-    width: 50%;
+    width: 60% !important;
     display: flex;
+    min-height: 70px !important;
+    flex-direction: row;
     justify-content: space-evenly;
+
 }
 .accueil_link{
     color: white;
@@ -51,12 +62,37 @@ a{
     background-color:chocolate;
 }
 
+.button_a>a{
+    min-width: 200px !important;
+    background-color: teal !important;
+}
+
+.button_ab>a{
+    min-width: 120px !important;
+    background-color: teal !important;
+}
+
+
+@media screen and (max-width: 850px) {
+    .menu_{
+        display: flex;
+        flex-direction: column ;
+    }
+    .sous_menu{
+        width: 90%;
+        display: block;
+        background-color: none !important;
+    }
+    .sous_menu:hover{
+        background-color: chocolate;
+    }
+}
+
 .img_back_section{
     position: relative;
     width: 100%;
     height: 100vh;
     margin-top:0px;
-    padding-top: 50px;
 }
 .img_container{
     position: relative;
@@ -79,8 +115,8 @@ a{
     font-weight: normal;
 }
 .img_container>h4{
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
     font-size: 30px;
     margin: 25px 0px;
     font-family: 'Roboto', sans-serif;

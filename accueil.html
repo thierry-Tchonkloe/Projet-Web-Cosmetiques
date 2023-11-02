@@ -16,27 +16,35 @@
 
     </head>
     <body>
-
-        <header class="">
-            <nav class="container_menu" aria-label="">
-                <div class="logo"><a href="" >LOGO</a></div>
-                <ul class="menu_">
+        
+        <header class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="container_menu container-fluid" aria-label="">
+                <div class="logo"><a href="accueil.html" ><img src="images/logo-pizzas0_Plan de travail 3-01.png" alt="LOGO"></a></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="menu_ collapse navbar-collapse" id="navbarSupportedContent">
                     <li class="sous_menu active"><a class="accueil_link " href="accueil.html" >HOME</a></li>
                     <li class="sous_menu"><a href="contact.html">CONTACT</a></li>
                     <li class="sous_menu"><a href="produit.html">PRODUCTS</a></li>
                     <li class="sous_menu"><a href="aide.html">HELP</a></li>
                 </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end button_ab">
+                    <a href="connect/singin.html" alt="button" class="btn bg-success text-white col-2" type="button">S'inscrire</a>
+                    <a href="connect/singup.html" alt="button" class="btn bg-success text-white col-2" type="button">Se connecté</a>
+                </div>
             </nav>
         </header>
 
         <section class="img_back_section">
             <div class="img_container">
+                <p style="height: 60px;"></p>
                 <h2>Welcome to Beauty Shop</h2>
                 <h4> We have quality products to make you so beautifull and also your skin light</h4><br>
                 <a href="" class="shop_button"> Shop Now </a>
             </div>
         </section>
-
+        
         <section class="product_section"> 
 
             <div class="section_title">
@@ -125,43 +133,9 @@
         </section>
 
         
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+        <div class="d-grid gap-1 col-2 mx-auto button_a">
+            <a href="produit/produit.html" alt="button" class="btn bg-success text-white" type="button">Voir Plus de Produits </a>
+        </div>
 
 
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
