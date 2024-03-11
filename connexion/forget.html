@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>forget Form Design</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css-js/singin.css" />
+        <script src="css-js/conn.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form id="myforget" method="post">
+            <h1>Update Password</h1>
+            <div class="input-box">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" name="email" required />
+                <label>Email Address</label>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="username" required />
+                <label>username</label>
+            </div>
+
+            <input type="submit" class="btn" onclick="forget_Form()" value="recover password">
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="singin.html">Login</a></p>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

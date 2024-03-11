@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form Design</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css-js/singin.css" />
+        <script src="css-js/conn.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form id="mysignin" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" name="email" required />
+                <label>Email Address</label>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-lock icon"></i>
+                <input id="pass" type="password" name="password" autocomplete="off" style="outline: none;" required/>
+                <label for="pass">Password</label>
+            </div>
+
+            <div class="row">
+                <label><input type="checkbox" />Remember me</label>
+                <a href="forget.html">Forgot password?</a>
+            </div>
+
+            <input type="button" class="btn" onclick="sign_in_Form()" value="Login">
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="singup.html">Signup now</a></p>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

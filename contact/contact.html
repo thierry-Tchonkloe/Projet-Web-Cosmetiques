@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="css-js/contact.css">
+
+    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="css-js/contact.js"></script>
+
+</head>
+<body>
+    <header class="navbar navbar-expand-lg header">
+        <nav class="container_menu container-fluid" aria-label="">
+            <div class="logo"><a href="../accueil.html" ><img src="../images/logo-pizzas0_Plan de travail 3-01.png" alt="LOGO"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="menu_ collapse navbar-collapse" id="navbarSupportedContent">
+                <li class="sous_menu"><a href="../accueil.html" >HOME</a></li>
+                <li class="sous_menu"><a href="../about/about.html">ABOUT</a></li>
+                <li class="sous_menu"><a href="../produit/produit.html">PRODUCTS</a></li>
+                <li class="sous_menu active"><a class="accueil_link" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+ 229 51905018">+ 229 51905018</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span></span> <a href="mailto:thierrytchonkloe79@gmail.com" style="font-size: 16px;">thierrytchonkloe79@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span> <a href="#">yoursite.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form id="mycontact" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" name="fname" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" name="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" name="email" placeholder="Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message" required></textarea>
+                        </div>
+                    </div>
+                    <input type="button" value="Send Message" onclick="contact_Form()" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-foot">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>thierrytchonkloe79@gmail.com</p>
+                <p>Tel: +229 51905018</p>
+                <p>Abomey-Calavi</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!-- <header class="navbar navbar-expand-lg header">
+            <div>
+                <div>
+                    <li>
+                        <a href="mailto:thierrytchonkloe79@gmail.com"><i
+                                class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;thierrytchonkloe79@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+22951905018"><i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+22951905018</a>
+                    </li>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end button_ab">
+                    <a href="connect/singin.html" alt="button" class="btn bg-success text-white col-2" type="button">S'inscrire</a>
+                    <a href="connect/singup.html" alt="button" class="btn bg-success text-white col-2" type="button">Se connecté</a>
+                </div>
+            </div>
+            <nav class="container_menu container-fluid" aria-label="">
+                <div class="logo"><a href="accueil.html" ><img src="images/logo-pizzas0_Plan de travail 3-01.png" alt="LOGO"></a></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="menu_ collapse navbar-collapse" id="navbarSupportedContent">
+                    <li class="sous_menu active"><a class="accueil_link " href="accueil.html" >HOME</a></li>
+                    <li class="sous_menu"><a href="contact.html">CONTACT</a></li>
+                    <li class="sous_menu"><a href="produit.html">PRODUCTS</a></li>
+                    <li class="sous_menu"><a href="aide.html">HELP</a></li>
+                </ul>
+            </nav>
+        </header> -->
+
+
+
+
+
+
+
+
+.section__heading--maintitle {
+    position: relative;
+    padding-bottom: 2rem
+}
+
+.section__heading--maintitle::before {
+    position: absolute;
+    content: "";
+    background: url(../img/other/heading-shape.png);
+    width: 174px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%)
+}
+
+.section__heading--maintitle.style2::before {
+    width: 13rem;
+    height: .2rem;
+    background: var(--secondary-color)
+}
+
+.testimonial__items {
+    padding: 22px 18px;
+    background: var(--white-color);
+    border-radius: 1rem;
+    -webkit-box-shadow: 2px 0 20px rgba(0, 0, 0, .06);
+    box-shadow: 2px 0 20px rgba(0, 0, 0, .06)
+}
+
+@media only screen and (min-width:1200px) {
+    .testimonial__items {
+        padding: 3rem
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .testimonial__items {
+        padding: 3rem 3.5rem
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .testimonial__items {
+        padding: 4rem 4.5rem
+    }
+}
+
+.testimonial__items:hover .testimonial__items--thumbnail__img {
+    border-color: var(--secondary-color)
+}
+
+.testimonial__items--thumbnail {
+    margin-bottom: 1.3rem
+}
+
+.testimonial__items--thumbnail__img {
+    padding: .3rem;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--border-color)
+}
+
+.testimonial__items--content {
+    position: relative
+}
+
+.testimonial__items--title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 6px;
+    font-weight: 700
+}
+
+@media only screen and (min-width:992px) {
+    .testimonial__items--title {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 1rem
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .testimonial__items--title {
+        font-size: 2.2rem;
+        line-height: 2.5rem
+    }
+}
+
+.testimonial__items--subtitle {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--text-gray-color);
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width:992px) {
+    .testimonial__items--subtitle {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-bottom: 1.2rem
+    }
+}
+
+.testimonial__items--desc {
+    margin-bottom: 1.2rem;
+    line-height: 2.4rem
+}
+
+@media only screen and (min-width:992px) {
+    .testimonial__items--desc {
+        margin-bottom: 1.4rem;
+        line-height: 2.7rem
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .testimonial__items--desc.style2 {
+        width: 55%;
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .testimonial__items--desc.style2 {
+        padding: 0 1.5rem
+    }
+}
+
+.testimonial__bg {
+    background: url(../img/banner/banner-bg3.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover
+}
+
+.testimonial__bg::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--black-color);
+    left: 0;
+    top: 0;
+    opacity: .4
+}
+
+.testimonial__items--style2 {
+    background: 0 0;
+    padding: 0 0 5rem;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit
+}
+
+@media only screen and (max-width:575px) {
+    .testimonial__items--style2 {
+        padding: 0 0 4.5rem
+    }
+}
+
+.testimonial__items--style2__thumbnail--img {
+    border: 3px solid var(--white-color)
+}
+
+.testimonial__items--subtitle.text-white {
+    color: var(--white-color)
+}
+
+
+.quickview__cart--btn {
+    height: 3.8rem;
+    line-height: 3.8rem;
+    padding: 0 25px;
+    margin-left: 15px;
+    font-size: 1.5rem
+}
+
+
+.primary__btn {
+    font-size: 1.4rem;
+    font-weight: var(--body-line-height);
+    line-height: 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    padding: 0 1.8rem;
+    letter-spacing: .2px;
+    border-radius: .3rem;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border: 0
+}
+
+.primary__btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color)
+}
+
+@media only screen and (min-width:768px) {
+    .primary__btn {
+        font-size: 1.5rem;
+        line-height: 4rem;
+        height: 4rem;
+        padding: 0 2rem
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .primary__btn {
+        font-size: 1.6rem;
+        line-height: 4.5rem;
+        height: 4.5rem
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .primary__btn {
+        font-size: 1.7rem;
+        line-height: 4.8rem;
+        height: 4.8rem;
+        padding: 0 2.3rem
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .primary__btn {
+        font-size: 1.8rem;
+        line-height: 5.2rem;
+        height: 5.2rem;
+        padding: 0 2.5rem
+    }
+}
+
+.primary__btn--arrow__icon {
+    vertical-align: middle;
+    margin-left: .3rem
+}
+
+@media only screen and (max-width:767px) {
+    .product__tab--primary__btn {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.product__tab--primary__btn__list {
+    font-size: 1.6rem;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    -webkit-transition: var(--transition);
+    transition: var(--transition)
+}
+
+@media only screen and (max-width:767px) {
+    .product__tab--primary__btn__list {
+        font-size: 1.4rem
+    }
+}
+
+.product__tab--primary__btn__list.active {
+    color: var(--secondary-color)
+}
+
+.product__tab--primary__btn__list:hover {
+    color: var(--secondary-color)
+}
+
+.product__tab--primary__btn__list:last-child {
+    margin-right: 0
+}
+
+@media only screen and (max-width:575px) {
+    .product__tab--primary__btn__list {
+        line-height: 22px;
+        margin: 5px 10px
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .product__tab--primary__btn__list {
+        margin-right: 30px;
+        font-size: 1.7rem
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .product__tab--primary__btn__list {
+        margin-right: 45px;
+        font-size: 1.8rem
+    }
+}
+
+.actions__newreviews--btn.primary__btn {
+    font-size: 1.4rem;
+    line-height: 4rem;
+    height: 4rem;
+    padding: 0 1.5rem
+}
+
+@media only screen and (min-width:992px) {
+    .actions__newreviews--btn.primary__btn {
+        font-size: 1.5rem;
+        line-height: 4.2rem;
+        height: 4.2rem;
+        padding: 0 1.8rem
+    }
+}
+
+
+/* background: #000718; 
+    background-color: #31279d; */
+
+
+class="btn bg-success text-white"

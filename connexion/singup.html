@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sing up Form Design</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css-js/singin.css" />
+        <script src="css-js/conn.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form id="mysignup" method="post">
+            <h1>Sing up</h1>
+            <div class="input-box">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="username" required />
+                <label>username</label>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" name="email" required />
+                <label>Email Address</label>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" name="password" required />
+                <label>Password</label>
+            </div>
+
+            <div class="row">
+                <label><input type="checkbox" />Remember me</label>
+                <a href="forget.html">Forgot password?</a>
+            </div>
+
+            <input type="button" class="btn" value="Sign Up" onclick="signup_Form()">
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="singin.html">Login</a></p>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
