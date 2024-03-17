@@ -108,7 +108,8 @@ a{
     text-decoration: none;
 }
 .detail_{
-    background: #731da939;
+    /* background: #731da939; */
+    background: #d0d0d0;
     width : 100%;
     height: auto;
     min-height: 70vh;
